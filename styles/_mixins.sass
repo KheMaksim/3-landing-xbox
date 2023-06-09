@@ -1,0 +1,57 @@
+$white: #ffffff
+$bggray: #373A3C
+$txtgreen: #7DD42F
+$txtgray: rgba(255, 255, 255, 0.5)
+$btngreen: #8DD83D
+$btngray: #828282
+
+=tablet-landscape
+	@media screen and (max-width: 900px)
+		@content
+
+=mobile-landscape
+	@media screen and (max-width: 600px)
+		@content
+
+=width($size)
+	max-width: $size
+	width: 100%
+
+=height($size)
+	min-height: $size
+	height: 100%
+
+=full
+	width: 100%
+	height: 100%
+
+=font($size,$lh)
+	font-size: $size
+	line-height: $lh
+	font-weight: 400
+
+=dbetween
+	display: flex
+	justify-content: space-between
+
+=dcenter
+	display: flex
+	justify-content: center
+	align-items: center
+
+=border($color)
+	border: 1px solid $color
+
+=link
+	&:hover
+		color: $btngreen
+
+=greenbtn
+	&:hover
+		color: #000
+		background: linear-gradient(to bottom, #b4e391 0%,#61c419 50%,#b4e391 100%)
+
+=graybtn
+	&:hover
+		color: #fff
+		background: linear-gradient(to bottom, #b5bdc8 0%,#828c95 36%,#28343b 100%)

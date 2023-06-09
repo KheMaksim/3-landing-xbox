@@ -1,0 +1,99 @@
+.cards
+	+dcenter
+	flex-direction: column
+	background: #4f4f4f
+	padding: 64px 0 162px
+	+tablet-landscape
+		padding: 51px 0 130px
+	+mobile-landscape
+		padding: 35px 0 89px
+	&__text
+		background: url(../images/xbox-white-logo.svg) no-repeat top
+		text-align: center
+		margin-bottom: 44px
+		color: $white
+		+tablet-landscape
+			background-size: 51px 51px
+			margin-bottom: 35px
+		+mobile-landscape
+			background-size: 35px 35px
+			margin-bottom: 19px
+	&__title
+		+font(48px,56px)
+		margin-top: 80px
+		+tablet-landscape
+			+font(38px,45px)
+			margin-top: 64px
+		+mobile-landscape
+			+font(26px,31px)
+			margin-top: 35px
+	&__subtitle
+		+font(36px,42px)
+		+tablet-landscape
+			+font(29px,33px)
+		+mobile-landscape
+			+font(20px,23px)
+	&__row
+		+dbetween
+		+width(1152px)
+		flex-wrap: wrap
+		margin: 0 auto
+		padding: 10px
+
+.card__item
+	max-width: 320px
+	flex: 0 0 100%
+	background: $white
+	+border($btngreen)
+	border-radius: 4px
+	color: #435766
+	margin: 10px auto
+	+tablet-landscape
+		max-width: 256px
+	+mobile-landscape
+		max-width: 176px
+
+.item
+	&__img
+		max-width: 100%
+	&__content
+		+dbetween
+		flex-direction: column
+		min-height: 240px
+		padding: 22px 20px 27px
+		+tablet-landscape
+			min-height: 192px
+			padding: 18px 16px 22px
+		+mobile-landscape
+			min-height: 132px
+			padding: 12px 11px 15px
+	&__title
+		+font(18px,21px)
+		+tablet-landscape
+			+font(14px,17px)
+		+mobile-landscape
+			+font(10px,12px)
+	&__subtitle
+		+font(24px,28px)
+		padding-bottom: 27px
+		+tablet-landscape
+			+font(20px,22px)
+			padding-bottom: 22px
+		+mobile-landscape
+			+font(13px,15px)
+			padding-bottom: 15px
+	&__btn
+		+dcenter
+		+font(16px,21px)
+		min-height: 60px
+		background: $btngreen
+		color: $white
+		border-radius: 4px
+		border: none
+		+greenbtn
+		+tablet-landscape
+			+font(13px,17px)
+			min-height: 48px
+		+mobile-landscape
+			+font(10px,12px)
+			min-height: 33px

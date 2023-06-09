@@ -1,0 +1,92 @@
+.promo
+	&__img-block
+		position: relative
+	&__image
+		width: 100%
+		+height(450px)
+		object-fit: cover
+		+mobile-landscape
+			+height(250px)
+	&__info
+		+width(320px)
+		padding: 0 10px
+		position: absolute
+		top: 33%
+		left: 59%
+		+tablet-landscape
+			+width(256px)
+			left: 37%
+		+mobile-landscape
+			+width(196px)
+			left: 27%
+
+.info
+	&__items
+		color: $white
+	&__title
+		+font(36px,42px)
+		margin-bottom: 0
+		+tablet-landscape
+			+font(29px,34px)
+		+mobile-landscape
+			+font(20px,23px)
+	&__subtitle
+		+font(24px,28px)
+		padding-bottom: 35px
+		margin-bottom: 0
+		+tablet-landscape
+			+font(19px,22px)
+			padding-bottom: 28px
+		+mobile-landscape
+			+font(13px,15px)
+			padding-bottom: 19px
+	&__buttons
+		+dbetween
+		+width(300px)
+		min-height: 38px
+		+tablet-landscape
+			+width(240px)
+			min-height: 30px
+		+mobile-landscape
+			+width(165px)
+			min-height: 21px
+	&__trailer
+		+dcenter
+		+width(136px)
+		+font(16px,21px)
+		background: $btngreen
+		color: $white
+		border-radius: 4px
+		border: none
+		+greenbtn
+		+tablet-landscape
+			+width(106px)
+			+font(13px,17px)
+		+mobile-landscape
+			+width(75px)
+			+font(8px,10px)
+	&__explore
+		@extend .info__trailer
+		+width(148px)
+		background: $btngray
+		+graybtn
+		+tablet-landscape
+			+width(118px)
+		+mobile-landscape
+			+width(81px)
+
+.page-btn
+	width: 10px !important
+	height: 10px !important
+	background: $btngreen !important
+	+mobile-landscape
+		width: 5px !important
+		height: 5px !important
+
+.carousel-control-prev-icon
+	background: url(../images/prev.png)
+	background-size: 32px 32px
+
+.carousel-control-next-icon
+	background: url(../images/next.png)
+	background-size: 32px 32px

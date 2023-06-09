@@ -1,0 +1,83 @@
+.footer
+	+dcenter
+	flex-direction: column
+	background: $bggray
+	padding-top: 48px
+	padding-bottom: 38px
+	color: $white
+	+tablet-landscape
+		padding-top: 38px
+		padding-bottom: 30px
+	+mobile-landscape
+		padding-top: 27px
+		padding-bottom: 21px
+	&__container
+		+width(1070px)
+		+dbetween
+		flex-wrap: wrap
+		padding-right: 214px
+		padding-bottom: 40px
+		+tablet-landscape
+			padding-right: 171px
+			padding-bottom: 32px
+		+mobile-landscape
+			padding-right: 10px
+			padding-bottom: 22px
+	&__item
+		margin: 10px
+	&__menu
+		min-height: 153px
+		+dbetween
+		flex-direction: column
+		padding-left: 0
+		margin-bottom: 0
+		+tablet-landscape
+			min-height: 122px
+		+mobile-landscape
+			min-height: 84px
+	&__title
+		+font(18px,21px)
+		font-weight: 700
+		color: $txtgreen
+		margin-bottom: 35px
+		+tablet-landscape
+			+font(14px,17px)
+			margin-bottom: 28px
+		+mobile-landscape
+			+font(10px,10px)
+			margin-bottom: 19px
+	&__line
+		+width(1200px)
+		+border($white)
+		height: 2px
+		opacity: 0.35
+		background: $white
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+	&__copyright
+		+width(1200px)
+		+dbetween
+		padding-top: 19px
+		+tablet-landscape
+			padding-top: 15px
+		+mobile-landscape
+			padding-top: 11px
+	&__text
+		+font(16px,19px)
+		margin: 0 10px
+		+tablet-landscape
+			+font(13px,15px)
+		+mobile-landscape
+			+font(10px,11px)
+
+.menu__list
+	+font(14px,16px)
+	color: $white
+	+link
+	+tablet-landscape
+		+font(11px,13px)
+	+mobile-landscape
+		+font(10px,11px)
+.social__links
+	width: 91px
+	padding-left: 0
+	+dbetween

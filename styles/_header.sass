@@ -1,0 +1,96 @@
+@import mixins
+
+.header
+	min-height: 60px
+	background: $bggray
+	&__logo-image
+		+tablet-landscape
+			width: 77px
+			height: 23px
+		+mobile-landscape
+			width: 53px
+			height: 16px
+.container-fluid
+	+width(1155px)
+	padding: 0 50px 0 25px
+
+.navbar
+	&-toggler
+		color: #2f7e0a
+	&-toggler-icon
+		background-image: url(../images/burger.png)
+		+mobile-landscape
+			background-size: 20px
+	&-nav
+		+dbetween
+		min-width: 486px
+		color: $txtgray !important
+		+tablet-landscape
+			min-width: 389px
+		+mobile-landscape
+			min-width: 148px
+
+.collapse
+	align-items: center
+	justify-content: flex-end
+	color: $txtgray
+
+.nav
+	&-item
+		display: flex
+		align-items: center
+	&-link:focus
+		color: $txtgray
+
+.menu__link
+	+font(16px,16px)
+	color: $txtgray
+	+link
+	+tablet-landscape
+		+font(13px,13px)
+	+mobile-landscape
+		+font(10px,10px)
+.dropdown-toggle::after
+	display: none
+
+.user__button
+	background: url(../images/user.svg) left no-repeat, url(../images/down-arrow.svg) right no-repeat
+	width: 117px
+	text-align: center
+	color: $txtgray
+	padding-left: 10px !important
+	+link
+	+tablet-landscape
+		padding-left: 8px !important
+		width: 93px
+	+mobile-landscape
+		padding-left: 5px !important
+		width: 80px
+
+.drop
+	position: relative
+	display: inline-block
+	&:hover
+		.drop__menu
+			display: block
+	&__menu
+		display: none
+		position: absolute
+		width: 100%
+		z-index: 2
+		background-color: $bggray
+		padding: 0
+		margin-top: 2px
+		border-radius: 5px
+		+border(rgba(125, 212, 47, 0.7))
+	&__item
+		color: $txtgray
+		display: block
+		padding: 12px 5px
+		+mobile-landscape
+			+font(10px,10px)
+		&:hover
+			border-radius: 5px
+			background: $txtgray
+			color: $btngreen
+			+border(rgba(125, 212, 47, 0.7))
